@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form enctype='multipart/form-data' method="POST">
+        <input id="file-upload" name="file" class="hidden" type="file" accept="image/x-png,image/gif,image/jpeg" />
+        <input type="submit" value="提交" onclick="submitImage();">
+        <label for="file-upload" id="file-drag" class="upload-box">
+        <div id="upload-caption">Drop image here or click to select</div>
+        <img id="image-preview" class="hidden" />
+    </label>
+    </form>
+</body>
+<footer>
+    <script src="{{ url_for('static',filename='main.js') }}"></script>
+  </footer>
+</html>
+
